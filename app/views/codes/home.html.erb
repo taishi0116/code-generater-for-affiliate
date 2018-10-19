@@ -1,0 +1,24 @@
+<h1>アフィリエイトコード自動生成ツール</h1>
+<div class="code-gene">
+    <%= form_tag(:controller => 'codes', :action => 'new') do %>
+        <%= label_tag ("アフィリエイトID") %>
+        <br>
+        <%= text_field_tag :afid, (params[:afid])%>
+        <br>
+        <%= label_tag "商品のURL" %>
+        <br>
+        <%= text_field_tag :url %>
+        <br>
+        <%= label_tag "imageアドレス" %>
+        <br>
+        <%= text_field_tag :imgaddress %>
+        <br>
+        <%= submit_tag "送信", class: "button-submit" %>
+        <br>
+    <% end %>
+    <br>
+    <br>
+    <p>ソースコード↓</p>
+    <%= @afurl  %>
+    
+</div>
